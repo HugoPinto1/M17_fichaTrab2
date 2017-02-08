@@ -1,5 +1,12 @@
 package m17b_fichatrab2;
 
+/**
+ * Classe Ponto2D, para instaciar objetos do tipo Ponto2D.
+ * @author a13226
+ * @version 1.1 08.fev.2017
+ */
+
+
 public class Ponto2D {
     
     
@@ -18,9 +25,9 @@ public class Ponto2D {
     }
     
     /**
-     * Construtor sem parâmetros que define os atributos de acordo com os parâmetros. 
-     * @param x
-     * @param y 
+     * Construtor que define os atributos de acordo com os parâmetros. 
+     * @param x do tipo int para definir atributo x.
+     * @param y do tipo int para definir atributo y.
      */
     
     public Ponto2D(int x, int y){
@@ -28,15 +35,28 @@ public class Ponto2D {
         this.y = y;        
     }
     
-    
+    /**
+     * 
+     * @param a do tipo Ponto2D.
+     * @return distância entre o ponto selecionado e o ponto passado como parâmetro. 
+     */
     
     public double distancia(Ponto2D a){
         
-        double distancia = 0.0;
+        double dist = 0.0;
                
+        dist = Math.sqrt((Math.pow(x - a.getX(),2)) + (Math.pow(y - a.getY(),2)));
         
-        
-        return distancia;
+        return dist;
+    }
+    /**
+     *
+     * @return String que indica o valor dos atributos x e y do ponto criado.
+     */
+    
+    @Override
+    public String toString(){
+        return "X: " + x + ", Y: " + y;
     }
 
     /**
