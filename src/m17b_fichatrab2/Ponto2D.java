@@ -9,7 +9,7 @@ package m17b_fichatrab2;
 
 public class Ponto2D {
     
-    
+    //atributos do tipo int para definir a posição do ponto.
     private int x;
     private int y;
     
@@ -38,7 +38,7 @@ public class Ponto2D {
     /**
      * 
      * @param a do tipo Ponto2D.
-     * @return distância entre o ponto selecionado e o ponto passado como parâmetro. 
+     * @return dist, distância entre o ponto selecionado e o ponto passado como parâmetro. 
      */
     
     public double distancia(Ponto2D a){

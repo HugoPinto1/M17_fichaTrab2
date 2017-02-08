@@ -10,8 +10,8 @@ public class Main {
 
     public static void main(String[] args) {
         // Ficha de Trabalho #2
-        Ponto2D p1 = new Ponto2D(5,7); //instanciação do objeto p1 do tipo Ponto2D.
-        Ponto2D p2 = new Ponto2D(2,8); //instanciação do objeto p2 do tipo Ponto2D.
+        Ponto2D p1 = new Ponto2D(0,-5); //instanciação do objeto p1 do tipo Ponto2D.
+        Ponto2D p2 = new Ponto2D(0,0); //instanciação do objeto p2 do tipo Ponto2D.
         
         
         //Utilização do método toString.
